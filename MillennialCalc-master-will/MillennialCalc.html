@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+<style>
+
+/*@font-face rule declarations*/
+
+@font-face {
+	font-family: 'Edmondsans';
+	src: url('fonts/Edmondsans-Bold.otf');
+	font-weight: bold;
+	font-style: normal;
+}
+
+body {
+	background: url("img/atin.jpg");
+}
+
+
+header {
+	text-align: center;
+	font-family: 'Edmondsans', Arial, sans-serif;
+}
+
+section {
+	text-align: center;
+	margin-top: 50px;
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+<header>
+
+<h1>Atin's Millennial Budget Calculator</h1>
+<script src="Calc.js"></script>
+
+<p> Yearly Salary: </p>
+<input id ="Gross"> 
+
+<button type="button" onclick="Calculate()" >Calculate</button>
+
+</header>
+
+
+<section class="taxes">
+
+<h2> Taxes </h2>
+<p> Federal tax rate: </p>
+<p id = "TaxRate"> </p>
+
+<p> Yearly post tax income: </p> 
+<p id= "yearly"> </p>
+
+<p> Monthly post tax income: </p>
+<p id="monthly"> </p>
+
+</section>
+
+<section class="budget">
+
+<h2>Your Recommended Monthly Budget</h2>
+<!--<h2> Monthly Expenses </h2>-->
+<p> Housing: </p>
+<p id="housing"></p>
+
+<p>  Transportation: </p>
+<p id="transportation"></p>
+
+<p> Food: </p>
+<p id="food"></p>
+
+<p> Savings: </p>
+<p id="savings"></p>
+
+<p> Debt Payment: </p>
+<p id="debt payment"></p>
+
+<p> Other: </p>
+<p id="other"></p>
+
+</section>
+
+
+</body>
+</html>
